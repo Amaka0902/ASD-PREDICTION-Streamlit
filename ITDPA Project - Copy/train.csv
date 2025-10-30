@@ -1,0 +1,12 @@
+ID,A1_Score,A2_Score,A3_Score,A4_Score,A5_Score,A6_Score,A7_Score,A8_Score,A9_Score,A10_Score,age,gender,ethnicity,jaundice,austim,contry_of_res,used_app_before,result,age_desc,relation,Class/ASD,screening_result
+1,1,1,1,0,1,0,0,0,0,1,21,Male,Middle Eastern,No,,Malawi,yes,5,18 and more,Guardian,,0
+2,1,1,0,1,0,1,1,0,1,1,23,Female,Hispanic,No,,South Sudan,yes,7,18 and more,Parent,,1
+3,0,1,0,1,0,0,1,1,1,1,22,Female,Middle Eastern,Yes,,South Africa,yes,6,18 and more,Guardian,,1
+4,1,1,0,1,1,1,0,0,0,0,25,Male,Middle Eastern,No,,United States of America,yes,5,18 and more,Parent,,0
+5,1,1,0,1,1,1,1,1,1,1,5,Female,Black,No,,South Africa,yes,9,0-18,Parent,,1
+6,1,0,1,0,1,1,1,0,1,0,25,Male,Pasifika,No,,Egypt,yes,6,18 and more,Parent,,1
+7,1,0,0,1,0,1,0,0,0,1,22,Female,South Asian,Yes,,South Africa,yes,4,18 and more,Self,,0
+8,0,0,0,0,0,0,0,1,0,0,15,Male,South Asian,No,,South Africa,yes,1,0-18,Guardian,,0
+9,1,0,0,0,0,0,1,1,0,0,48,Male,South Asian,No,,South Africa,yes,3,18 and more,Self,,0
+10,1,1,1,1,0,0,0,1,1,1,22,Male,South Asian,No,,South Africa,yes,7,18 and more,Self,,1
+11,1,1,1,1,0,0,0,1,0,1,22,Male,Middle Eastern,No,,South Africa,yes,6,18 and more,Self,,1
