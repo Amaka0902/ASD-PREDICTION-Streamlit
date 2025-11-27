@@ -172,6 +172,7 @@ def train_models(data_path):
 
     # XGBoost
     if XGBOOST_AVAILABLE:
+        try:
         xgb = Pipeline([
             ('pre', preprocessor),
             ('clf', XGBClassifier(eval_metric='logloss'))
@@ -180,7 +181,6 @@ def train_models(data_path):
             models['XGBoost'] = {'model': xgb, 'test_data': (X_test, y_test)}
         except:
             pass
-
     return models, None
 
 # ------------------------
@@ -427,3 +427,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
