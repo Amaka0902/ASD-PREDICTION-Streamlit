@@ -162,7 +162,7 @@ def train_models(data_path):
 
     models = {}
 
-    # SVM
+# SVM
     try:
         svm = Pipeline([('pre', preprocessor), ('clf', SVC(probability=True, random_state=42))])
         svm.fit(X_train, y_train)
@@ -173,16 +173,17 @@ def train_models(data_path):
     # XGBoost
     if XGBOOST_AVAILABLE:
         try:
-        xgb = Pipeline([
-            ('pre', preprocessor),
-            ('clf', XGBClassifier(eval_metric='logloss'))
-        ])
+            # Everything inside 'try' must be indented
+            xgb = Pipeline([
+                ('pre', preprocessor),
+                ('clf', XGBClassifier(eval_metric='logloss'))
+            ])
             xgb.fit(X_train, y_train)
             models['XGBoost'] = {'model': xgb, 'test_data': (X_test, y_test)}
-        except:
+        except Exception:
             pass
+            
     return models, None
-
 # ------------------------
 # UI COMPONENTS
 # ------------------------
@@ -427,4 +428,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
